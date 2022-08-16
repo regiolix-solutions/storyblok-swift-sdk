@@ -1,4 +1,6 @@
 # Storyblok Swift SDK - 0.1
+
+[![CI Status](https://img.shields.io/travis/Medweschek&#32;Michael/RXSStoryblokClient.svg?style=flat)](https://travis-ci.org/Medweschek&#32;Michael/RXSStoryblokClient)
 [![Version](https://img.shields.io/cocoapods/v/RXSStoryblokClient.svg?style=flat)](https://cocoapods.org/pods/RXSStoryblokClient)
 [![License](https://img.shields.io/cocoapods/l/RXSStoryblokClient.svg?style=flat)](https://cocoapods.org/pods/RXSStoryblokClient)
 [![Platform](https://img.shields.io/cocoapods/p/RXSStoryblokClient.svg?style=flat)](https://cocoapods.org/pods/RXSStoryblokClient)
@@ -21,14 +23,12 @@ This is a Swift SDK/Wrapper around the Storyblok Delivery API and the Storyblok 
 * Website: https://www.storyblok.com
 
 # Installation
-## Cocoapods
-Add the following line to your podfile
-```
+
+RXSStoryblokClient is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
 pod 'RXSStoryblokClient'
-```
-Now install the pod
-```
-pod install
 ```
 
 # Examples And Usage
@@ -171,3 +171,12 @@ func timeoutIntervalForResource() -> TimeInterval
 ```swift
 func allowsCellularAccessForBackgroundDownloads() -> Bool
 ```
+
+# Author
+
+Medweschek Michael, medwe@me.com
+
+# License
+
+RXSStoryblokClient is available under the MIT license. See the LICENSE file for more info.
+
