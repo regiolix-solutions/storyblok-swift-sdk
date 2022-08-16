@@ -1,0 +1,6 @@
+framework module RXSStoryblokClient {
+  umbrella header "RXSStoryblokClient-umbrella.h"
+
+  export *
+  module * { export * }
+}

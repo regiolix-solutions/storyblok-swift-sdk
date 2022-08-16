@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'RXSStoryblokClient_Example' do
+  pod 'RXSStoryblokClient', :path => '../'
+
+  target 'RXSStoryblokClient_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

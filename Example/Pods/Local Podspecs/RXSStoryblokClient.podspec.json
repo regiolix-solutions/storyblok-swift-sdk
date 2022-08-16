@@ -1,0 +1,22 @@
+{
+  "name": "RXSStoryblokClient",
+  "version": "0.1.0",
+  "summary": "A short description of RXSStoryblokClient.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Medweschek Michael/RXSStoryblokClient",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Medweschek Michael": "medwe@me.com"
+  },
+  "source": {
+    "git": "https://github.com/Medweschek Michael/RXSStoryblokClient.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "RXSStoryblokClient/Classes/**/*"
+}

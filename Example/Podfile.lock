@@ -1,0 +1,16 @@
+PODS:
+  - RXSStoryblokClient (0.1.0)
+
+DEPENDENCIES:
+  - RXSStoryblokClient (from `../`)
+
+EXTERNAL SOURCES:
+  RXSStoryblokClient:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RXSStoryblokClient: 78baf48d744c4d468cb8d80cf0211294234740a0
+
+PODFILE CHECKSUM: c7c674bb46d595d121b778ed977d8c108349e712
+
+COCOAPODS: 1.11.3

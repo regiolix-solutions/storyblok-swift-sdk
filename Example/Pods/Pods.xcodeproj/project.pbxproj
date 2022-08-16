@@ -1,0 +1,909 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0ACDCF4846946F825F7C3330AD900F9D /* Pods-RXSStoryblokClient_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A442EF482B5EAF7B3CDFEE97429B6CB8 /* Pods-RXSStoryblokClient_Tests-dummy.m */; };
+		3982A10E4C0452C4A84D09B16C50CF60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		77BBA39B859D07957DB8FBEA8485E72C /* Pods-RXSStoryblokClient_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5613BCA91D86D0183B13BE2CB7AFFA /* Pods-RXSStoryblokClient_Example-dummy.m */; };
+		9E67182BEF4BD26C781339285EA5F5D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		CB4C3FF928ABC61B00F9AE5C /* Storyblok.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3FD328ABC61B00F9AE5C /* Storyblok.swift */; };
+		CB4C3FFA28ABC61B00F9AE5C /* RXS_Storyblok_Client.docc in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3FD428ABC61B00F9AE5C /* RXS_Storyblok_Client.docc */; };
+		CB4C3FFB28ABC61B00F9AE5C /* DataConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3FD628ABC61B00F9AE5C /* DataConnection.swift */; };
+		CB4C3FFC28ABC61B00F9AE5C /* RXSDataConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3FD728ABC61B00F9AE5C /* RXSDataConnection.swift */; };
+		CB4C3FFD28ABC61B00F9AE5C /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = CB4C3FD828ABC61B00F9AE5C /* .gitkeep */; };
+		CB4C3FFE28ABC61B00F9AE5C /* StoryblokQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3FDA28ABC61B00F9AE5C /* StoryblokQuery.swift */; };
+		CB4C3FFF28ABC61B00F9AE5C /* StoryblokManagementQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3FDC28ABC61B00F9AE5C /* StoryblokManagementQuery.swift */; };
+		CB4C400028ABC61B00F9AE5C /* ObjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3FDD28ABC61B00F9AE5C /* ObjectType.swift */; };
+		CB4C400128ABC61C00F9AE5C /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3FDE28ABC61B00F9AE5C /* Operation.swift */; };
+		CB4C400228ABC61C00F9AE5C /* FilterQueryParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3FE028ABC61B00F9AE5C /* FilterQueryParameter.swift */; };
+		CB4C400328ABC61C00F9AE5C /* FilterOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3FE128ABC61B00F9AE5C /* FilterOperation.swift */; };
+		CB4C400428ABC61C00F9AE5C /* AssetUploadBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3FE428ABC61B00F9AE5C /* AssetUploadBody.swift */; };
+		CB4C400528ABC61C00F9AE5C /* Fields.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3FE528ABC61B00F9AE5C /* Fields.swift */; };
+		CB4C400628ABC61C00F9AE5C /* AssetUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3FE628ABC61B00F9AE5C /* AssetUpload.swift */; };
+		CB4C400728ABC61C00F9AE5C /* TranslatedSlug.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3FE828ABC61B00F9AE5C /* TranslatedSlug.swift */; };
+		CB4C400828ABC61C00F9AE5C /* StoryVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3FE928ABC61B00F9AE5C /* StoryVersion.swift */; };
+		CB4C400928ABC61C00F9AE5C /* StoryContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3FEA28ABC61B00F9AE5C /* StoryContent.swift */; };
+		CB4C400A28ABC61C00F9AE5C /* ResolveLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3FEB28ABC61B00F9AE5C /* ResolveLinks.swift */; };
+		CB4C400B28ABC61C00F9AE5C /* AlternateStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3FEC28ABC61B00F9AE5C /* AlternateStory.swift */; };
+		CB4C400C28ABC61C00F9AE5C /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3FED28ABC61B00F9AE5C /* Asset.swift */; };
+		CB4C400D28ABC61C00F9AE5C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3FEE28ABC61B00F9AE5C /* Color.swift */; };
+		CB4C400E28ABC61C00F9AE5C /* Stories.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3FEF28ABC61B00F9AE5C /* Stories.swift */; };
+		CB4C400F28ABC61C00F9AE5C /* ManagementStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3FF028ABC61B00F9AE5C /* ManagementStory.swift */; };
+		CB4C401028ABC61C00F9AE5C /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3FF128ABC61B00F9AE5C /* Story.swift */; };
+		CB4C401228ABC61C00F9AE5C /* RXSStoryblokClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3FF428ABC61B00F9AE5C /* RXSStoryblokClient.swift */; };
+		CB4C401328ABC61C00F9AE5C /* StoryblokClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3FF528ABC61B00F9AE5C /* StoryblokClient.swift */; };
+		CB4C401428ABC61C00F9AE5C /* StoryIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3FF628ABC61B00F9AE5C /* StoryIdentifier.swift */; };
+		DC460BCC81C521310C09C18189C58190 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		383E1BF6A9E1D29334CF8357C264A395 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9598D74A56CEE8406D66BA14C1D8EF45;
+			remoteInfo = RXSStoryblokClient;
+		};
+		F097D6506748366E00857B4AFE3378D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AF9C70D9D493948FD71617D29CB2325;
+			remoteInfo = "Pods-RXSStoryblokClient_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0314393C6DF7917DFE0FA9BC8C046D27 /* Pods-RXSStoryblokClient_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RXSStoryblokClient_Tests-Info.plist"; sourceTree = "<group>"; };
+		05750A17DBFECAB6DDC4DD31F18E32DE /* Pods-RXSStoryblokClient_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RXSStoryblokClient_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		0CC67FFCEAD81D0824AE5D18803AFA7A /* Pods-RXSStoryblokClient_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RXSStoryblokClient_Example-Info.plist"; sourceTree = "<group>"; };
+		13E83B6DFE4C0D09E1F185933AAD9BB4 /* RXSStoryblokClient.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = RXSStoryblokClient.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		19EF1F0D4C57CD0F49F428340DDA4B4A /* Pods-RXSStoryblokClient_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RXSStoryblokClient_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		1CB420E5AD6D999047964685888361B3 /* Pods-RXSStoryblokClient_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RXSStoryblokClient_Example-frameworks.sh"; sourceTree = "<group>"; };
+		228BFA5362AFBE03D7D0B723757F555A /* RXSStoryblokClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RXSStoryblokClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3000B9C4524CFA4DD96CDDA50C5F3FAE /* Pods_RXSStoryblokClient_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RXSStoryblokClient_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38232A65260EF4CE6DB2998CF6ABD7CB /* Pods-RXSStoryblokClient_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RXSStoryblokClient_Tests-umbrella.h"; sourceTree = "<group>"; };
+		537326422C447A27ACCAC60899BF4779 /* Pods-RXSStoryblokClient_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RXSStoryblokClient_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5B5BB26F68839C833FE4E375F73A10A2 /* Pods-RXSStoryblokClient_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RXSStoryblokClient_Example-umbrella.h"; sourceTree = "<group>"; };
+		624BBB8539E9EEE7E20BF9E1A3BE2A83 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		66B36C646F236FE7A10C5D8FA72A67F5 /* Pods-RXSStoryblokClient_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RXSStoryblokClient_Example.modulemap"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		77F5835352F17BD22FFE3CE88FF54FE7 /* Pods-RXSStoryblokClient_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RXSStoryblokClient_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8BFE7F4336154A0E88DEC563A9E2184A /* Pods-RXSStoryblokClient_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RXSStoryblokClient_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8C2E99E2545C41D4FBC72FD97967D587 /* Pods-RXSStoryblokClient_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RXSStoryblokClient_Tests.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		A442EF482B5EAF7B3CDFEE97429B6CB8 /* Pods-RXSStoryblokClient_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RXSStoryblokClient_Tests-dummy.m"; sourceTree = "<group>"; };
+		BF5613BCA91D86D0183B13BE2CB7AFFA /* Pods-RXSStoryblokClient_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RXSStoryblokClient_Example-dummy.m"; sourceTree = "<group>"; };
+		C3687F6C3879ED3C36CBB1BDBB51417F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C56D8F2D7BE2F7069CDE078A9429B2C7 /* Pods-RXSStoryblokClient_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RXSStoryblokClient_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		C7D1DA37F0DA3EAE77B6790FA2A9C438 /* Pods_RXSStoryblokClient_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RXSStoryblokClient_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB4C3FD328ABC61B00F9AE5C /* Storyblok.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyblok.swift; sourceTree = "<group>"; };
+		CB4C3FD428ABC61B00F9AE5C /* RXS_Storyblok_Client.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = RXS_Storyblok_Client.docc; sourceTree = "<group>"; };
+		CB4C3FD628ABC61B00F9AE5C /* DataConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataConnection.swift; sourceTree = "<group>"; };
+		CB4C3FD728ABC61B00F9AE5C /* RXSDataConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RXSDataConnection.swift; sourceTree = "<group>"; };
+		CB4C3FD828ABC61B00F9AE5C /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		CB4C3FDA28ABC61B00F9AE5C /* StoryblokQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryblokQuery.swift; sourceTree = "<group>"; };
+		CB4C3FDC28ABC61B00F9AE5C /* StoryblokManagementQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryblokManagementQuery.swift; sourceTree = "<group>"; };
+		CB4C3FDD28ABC61B00F9AE5C /* ObjectType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectType.swift; sourceTree = "<group>"; };
+		CB4C3FDE28ABC61B00F9AE5C /* Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		CB4C3FE028ABC61B00F9AE5C /* FilterQueryParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterQueryParameter.swift; sourceTree = "<group>"; };
+		CB4C3FE128ABC61B00F9AE5C /* FilterOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterOperation.swift; sourceTree = "<group>"; };
+		CB4C3FE428ABC61B00F9AE5C /* AssetUploadBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetUploadBody.swift; sourceTree = "<group>"; };
+		CB4C3FE528ABC61B00F9AE5C /* Fields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fields.swift; sourceTree = "<group>"; };
+		CB4C3FE628ABC61B00F9AE5C /* AssetUpload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetUpload.swift; sourceTree = "<group>"; };
+		CB4C3FE828ABC61B00F9AE5C /* TranslatedSlug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslatedSlug.swift; sourceTree = "<group>"; };
+		CB4C3FE928ABC61B00F9AE5C /* StoryVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryVersion.swift; sourceTree = "<group>"; };
+		CB4C3FEA28ABC61B00F9AE5C /* StoryContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryContent.swift; sourceTree = "<group>"; };
+		CB4C3FEB28ABC61B00F9AE5C /* ResolveLinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResolveLinks.swift; sourceTree = "<group>"; };
+		CB4C3FEC28ABC61B00F9AE5C /* AlternateStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlternateStory.swift; sourceTree = "<group>"; };
+		CB4C3FED28ABC61B00F9AE5C /* Asset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		CB4C3FEE28ABC61B00F9AE5C /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		CB4C3FEF28ABC61B00F9AE5C /* Stories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stories.swift; sourceTree = "<group>"; };
+		CB4C3FF028ABC61B00F9AE5C /* ManagementStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagementStory.swift; sourceTree = "<group>"; };
+		CB4C3FF128ABC61B00F9AE5C /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		CB4C3FF428ABC61B00F9AE5C /* RXSStoryblokClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RXSStoryblokClient.swift; sourceTree = "<group>"; };
+		CB4C3FF528ABC61B00F9AE5C /* StoryblokClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryblokClient.swift; sourceTree = "<group>"; };
+		CB4C3FF628ABC61B00F9AE5C /* StoryIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryIdentifier.swift; sourceTree = "<group>"; };
+		CB4C3FF828ABC61B00F9AE5C /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		F23F4C7C181AD311724412F0928005DB /* Pods-RXSStoryblokClient_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RXSStoryblokClient_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F693D61D85FE6E2DF19A63127BC7BA0E /* Pods-RXSStoryblokClient_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RXSStoryblokClient_Tests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CC04DBCA0A717656C889B6035805E95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC460BCC81C521310C09C18189C58190 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B1CEBE1140330F44914130F0D980EA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3982A10E4C0452C4A84D09B16C50CF60 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5DA56B79155621A268BC9B09BDC0BE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E67182BEF4BD26C781339285EA5F5D6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3674EAC134FEDD664FA190998771A853 /* Pods-RXSStoryblokClient_Example */ = {
+			isa = PBXGroup;
+			children = (
+				66B36C646F236FE7A10C5D8FA72A67F5 /* Pods-RXSStoryblokClient_Example.modulemap */,
+				537326422C447A27ACCAC60899BF4779 /* Pods-RXSStoryblokClient_Example-acknowledgements.markdown */,
+				C56D8F2D7BE2F7069CDE078A9429B2C7 /* Pods-RXSStoryblokClient_Example-acknowledgements.plist */,
+				BF5613BCA91D86D0183B13BE2CB7AFFA /* Pods-RXSStoryblokClient_Example-dummy.m */,
+				1CB420E5AD6D999047964685888361B3 /* Pods-RXSStoryblokClient_Example-frameworks.sh */,
+				0CC67FFCEAD81D0824AE5D18803AFA7A /* Pods-RXSStoryblokClient_Example-Info.plist */,
+				5B5BB26F68839C833FE4E375F73A10A2 /* Pods-RXSStoryblokClient_Example-umbrella.h */,
+				05750A17DBFECAB6DDC4DD31F18E32DE /* Pods-RXSStoryblokClient_Example.debug.xcconfig */,
+				F23F4C7C181AD311724412F0928005DB /* Pods-RXSStoryblokClient_Example.release.xcconfig */,
+			);
+			name = "Pods-RXSStoryblokClient_Example";
+			path = "Target Support Files/Pods-RXSStoryblokClient_Example";
+			sourceTree = "<group>";
+		};
+		3A38A1F1815A61806B14DBE6AEA5C044 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3000B9C4524CFA4DD96CDDA50C5F3FAE /* Pods_RXSStoryblokClient_Example.framework */,
+				C7D1DA37F0DA3EAE77B6790FA2A9C438 /* Pods_RXSStoryblokClient_Tests.framework */,
+				228BFA5362AFBE03D7D0B723757F555A /* RXSStoryblokClient.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CE502744F7AABEFB6B8D79E33117AB5 /* RXSStoryblokClient */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C3FF728ABC61B00F9AE5C /* Assets */,
+				CB4C3FD228ABC61B00F9AE5C /* Classes */,
+				CB4C3FD428ABC61B00F9AE5C /* RXS_Storyblok_Client.docc */,
+				8A5661A5BA634ECBFCDD570B7EB81037 /* Pod */,
+			);
+			name = RXSStoryblokClient;
+			path = ../../RXSStoryblokClient;
+			sourceTree = "<group>";
+		};
+		572A271CF55FEA26E822C8588C231066 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3674EAC134FEDD664FA190998771A853 /* Pods-RXSStoryblokClient_Example */,
+				A0B92CC629EB5AE95EC6BFE03CBC14F5 /* Pods-RXSStoryblokClient_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		8A5661A5BA634ECBFCDD570B7EB81037 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				624BBB8539E9EEE7E20BF9E1A3BE2A83 /* LICENSE */,
+				C3687F6C3879ED3C36CBB1BDBB51417F /* README.md */,
+				13E83B6DFE4C0D09E1F185933AAD9BB4 /* RXSStoryblokClient.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		9701669CC648B97026EA2A566156EA01 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CE502744F7AABEFB6B8D79E33117AB5 /* RXSStoryblokClient */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A0B92CC629EB5AE95EC6BFE03CBC14F5 /* Pods-RXSStoryblokClient_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8C2E99E2545C41D4FBC72FD97967D587 /* Pods-RXSStoryblokClient_Tests.modulemap */,
+				77F5835352F17BD22FFE3CE88FF54FE7 /* Pods-RXSStoryblokClient_Tests-acknowledgements.markdown */,
+				8BFE7F4336154A0E88DEC563A9E2184A /* Pods-RXSStoryblokClient_Tests-acknowledgements.plist */,
+				A442EF482B5EAF7B3CDFEE97429B6CB8 /* Pods-RXSStoryblokClient_Tests-dummy.m */,
+				0314393C6DF7917DFE0FA9BC8C046D27 /* Pods-RXSStoryblokClient_Tests-Info.plist */,
+				38232A65260EF4CE6DB2998CF6ABD7CB /* Pods-RXSStoryblokClient_Tests-umbrella.h */,
+				19EF1F0D4C57CD0F49F428340DDA4B4A /* Pods-RXSStoryblokClient_Tests.debug.xcconfig */,
+				F693D61D85FE6E2DF19A63127BC7BA0E /* Pods-RXSStoryblokClient_Tests.release.xcconfig */,
+			);
+			name = "Pods-RXSStoryblokClient_Tests";
+			path = "Target Support Files/Pods-RXSStoryblokClient_Tests";
+			sourceTree = "<group>";
+		};
+		CB4C3FD228ABC61B00F9AE5C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C3FD328ABC61B00F9AE5C /* Storyblok.swift */,
+				CB4C3FD528ABC61B00F9AE5C /* DataConnection */,
+				CB4C3FD928ABC61B00F9AE5C /* Queries */,
+				CB4C3FE228ABC61B00F9AE5C /* Model */,
+				CB4C3FF328ABC61B00F9AE5C /* Client */,
+				CB4C3FD828ABC61B00F9AE5C /* .gitkeep */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CB4C3FD528ABC61B00F9AE5C /* DataConnection */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C3FD628ABC61B00F9AE5C /* DataConnection.swift */,
+				CB4C3FD728ABC61B00F9AE5C /* RXSDataConnection.swift */,
+			);
+			path = DataConnection;
+			sourceTree = "<group>";
+		};
+		CB4C3FD928ABC61B00F9AE5C /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C3FDA28ABC61B00F9AE5C /* StoryblokQuery.swift */,
+				CB4C3FDB28ABC61B00F9AE5C /* Management */,
+				CB4C3FDF28ABC61B00F9AE5C /* Filter */,
+			);
+			path = Queries;
+			sourceTree = "<group>";
+		};
+		CB4C3FDB28ABC61B00F9AE5C /* Management */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C3FDC28ABC61B00F9AE5C /* StoryblokManagementQuery.swift */,
+				CB4C3FDD28ABC61B00F9AE5C /* ObjectType.swift */,
+				CB4C3FDE28ABC61B00F9AE5C /* Operation.swift */,
+			);
+			path = Management;
+			sourceTree = "<group>";
+		};
+		CB4C3FDF28ABC61B00F9AE5C /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C3FE028ABC61B00F9AE5C /* FilterQueryParameter.swift */,
+				CB4C3FE128ABC61B00F9AE5C /* FilterOperation.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		CB4C3FE228ABC61B00F9AE5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C3FE328ABC61B00F9AE5C /* Asset */,
+				CB4C3FE728ABC61B00F9AE5C /* Content */,
+				CB4C3FEF28ABC61B00F9AE5C /* Stories.swift */,
+				CB4C3FF028ABC61B00F9AE5C /* ManagementStory.swift */,
+				CB4C3FF128ABC61B00F9AE5C /* Story.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB4C3FE328ABC61B00F9AE5C /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C3FE428ABC61B00F9AE5C /* AssetUploadBody.swift */,
+				CB4C3FE528ABC61B00F9AE5C /* Fields.swift */,
+				CB4C3FE628ABC61B00F9AE5C /* AssetUpload.swift */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		CB4C3FE728ABC61B00F9AE5C /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C3FE828ABC61B00F9AE5C /* TranslatedSlug.swift */,
+				CB4C3FE928ABC61B00F9AE5C /* StoryVersion.swift */,
+				CB4C3FEA28ABC61B00F9AE5C /* StoryContent.swift */,
+				CB4C3FEB28ABC61B00F9AE5C /* ResolveLinks.swift */,
+				CB4C3FEC28ABC61B00F9AE5C /* AlternateStory.swift */,
+				CB4C3FED28ABC61B00F9AE5C /* Asset.swift */,
+				CB4C3FEE28ABC61B00F9AE5C /* Color.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		CB4C3FF328ABC61B00F9AE5C /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C3FF428ABC61B00F9AE5C /* RXSStoryblokClient.swift */,
+				CB4C3FF528ABC61B00F9AE5C /* StoryblokClient.swift */,
+				CB4C3FF628ABC61B00F9AE5C /* StoryIdentifier.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		CB4C3FF728ABC61B00F9AE5C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C3FF828ABC61B00F9AE5C /* .gitkeep */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				9701669CC648B97026EA2A566156EA01 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				3A38A1F1815A61806B14DBE6AEA5C044 /* Products */,
+				572A271CF55FEA26E822C8588C231066 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CF0ABA715F0E29357FD039625F54A63 /* Pods-RXSStoryblokClient_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D85369774808EBA513392682B81890BF /* Build configuration list for PBXNativeTarget "Pods-RXSStoryblokClient_Tests" */;
+			buildPhases = (
+				BACD0789C16635FA06F85D2299DA7269 /* Sources */,
+				1B1CEBE1140330F44914130F0D980EA7 /* Frameworks */,
+				D906CFF016FD90D1B77B2BCCD72FBD61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFAAAD2FD1BB4475456A98C28784B8E1 /* PBXTargetDependency */,
+			);
+			name = "Pods-RXSStoryblokClient_Tests";
+			productName = Pods_RXSStoryblokClient_Tests;
+			productReference = C7D1DA37F0DA3EAE77B6790FA2A9C438 /* Pods_RXSStoryblokClient_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4AF9C70D9D493948FD71617D29CB2325 /* Pods-RXSStoryblokClient_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12E9228749D8E8F316956C3ADE1A2452 /* Build configuration list for PBXNativeTarget "Pods-RXSStoryblokClient_Example" */;
+			buildPhases = (
+				6DE9FF2F87293F05864A22D7C0090E64 /* Sources */,
+				0CC04DBCA0A717656C889B6035805E95 /* Frameworks */,
+				39E8ECE00F9351D58802DE9DFC823FC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2B4D63304BB6CF03E4EF4EE58F2D1C6 /* PBXTargetDependency */,
+			);
+			name = "Pods-RXSStoryblokClient_Example";
+			productName = Pods_RXSStoryblokClient_Example;
+			productReference = 3000B9C4524CFA4DD96CDDA50C5F3FAE /* Pods_RXSStoryblokClient_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9598D74A56CEE8406D66BA14C1D8EF45 /* RXSStoryblokClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99518EB3136E1394D0CFD7081CC254AC /* Build configuration list for PBXNativeTarget "RXSStoryblokClient" */;
+			buildPhases = (
+				90158A898767212E5E0F4AC0D5F49D04 /* Sources */,
+				D5DA56B79155621A268BC9B09BDC0BE1 /* Frameworks */,
+				AC91FAD2A91D5C4207E2DCABE141F245 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RXSStoryblokClient;
+			productName = RXSStoryblokClient;
+			productReference = 228BFA5362AFBE03D7D0B723757F555A /* RXSStoryblokClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					9598D74A56CEE8406D66BA14C1D8EF45 = {
+						LastSwiftMigration = 1340;
+					};
+				};
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 3A38A1F1815A61806B14DBE6AEA5C044 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4AF9C70D9D493948FD71617D29CB2325 /* Pods-RXSStoryblokClient_Example */,
+				2CF0ABA715F0E29357FD039625F54A63 /* Pods-RXSStoryblokClient_Tests */,
+				9598D74A56CEE8406D66BA14C1D8EF45 /* RXSStoryblokClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39E8ECE00F9351D58802DE9DFC823FC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC91FAD2A91D5C4207E2DCABE141F245 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB4C3FFD28ABC61B00F9AE5C /* .gitkeep in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D906CFF016FD90D1B77B2BCCD72FBD61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DE9FF2F87293F05864A22D7C0090E64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77BBA39B859D07957DB8FBEA8485E72C /* Pods-RXSStoryblokClient_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90158A898767212E5E0F4AC0D5F49D04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB4C401228ABC61C00F9AE5C /* RXSStoryblokClient.swift in Sources */,
+				CB4C3FF928ABC61B00F9AE5C /* Storyblok.swift in Sources */,
+				CB4C3FFC28ABC61B00F9AE5C /* RXSDataConnection.swift in Sources */,
+				CB4C3FFA28ABC61B00F9AE5C /* RXS_Storyblok_Client.docc in Sources */,
+				CB4C401428ABC61C00F9AE5C /* StoryIdentifier.swift in Sources */,
+				CB4C400228ABC61C00F9AE5C /* FilterQueryParameter.swift in Sources */,
+				CB4C400F28ABC61C00F9AE5C /* ManagementStory.swift in Sources */,
+				CB4C400A28ABC61C00F9AE5C /* ResolveLinks.swift in Sources */,
+				CB4C401328ABC61C00F9AE5C /* StoryblokClient.swift in Sources */,
+				CB4C400128ABC61C00F9AE5C /* Operation.swift in Sources */,
+				CB4C400E28ABC61C00F9AE5C /* Stories.swift in Sources */,
+				CB4C3FFF28ABC61B00F9AE5C /* StoryblokManagementQuery.swift in Sources */,
+				CB4C400728ABC61C00F9AE5C /* TranslatedSlug.swift in Sources */,
+				CB4C401028ABC61C00F9AE5C /* Story.swift in Sources */,
+				CB4C400528ABC61C00F9AE5C /* Fields.swift in Sources */,
+				CB4C400C28ABC61C00F9AE5C /* Asset.swift in Sources */,
+				CB4C400028ABC61B00F9AE5C /* ObjectType.swift in Sources */,
+				CB4C400B28ABC61C00F9AE5C /* AlternateStory.swift in Sources */,
+				CB4C400928ABC61C00F9AE5C /* StoryContent.swift in Sources */,
+				CB4C400D28ABC61C00F9AE5C /* Color.swift in Sources */,
+				CB4C400328ABC61C00F9AE5C /* FilterOperation.swift in Sources */,
+				CB4C400828ABC61C00F9AE5C /* StoryVersion.swift in Sources */,
+				CB4C400628ABC61C00F9AE5C /* AssetUpload.swift in Sources */,
+				CB4C400428ABC61C00F9AE5C /* AssetUploadBody.swift in Sources */,
+				CB4C3FFE28ABC61B00F9AE5C /* StoryblokQuery.swift in Sources */,
+				CB4C3FFB28ABC61B00F9AE5C /* DataConnection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACD0789C16635FA06F85D2299DA7269 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ACDCF4846946F825F7C3330AD900F9D /* Pods-RXSStoryblokClient_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B2B4D63304BB6CF03E4EF4EE58F2D1C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RXSStoryblokClient;
+			target = 9598D74A56CEE8406D66BA14C1D8EF45 /* RXSStoryblokClient */;
+			targetProxy = 383E1BF6A9E1D29334CF8357C264A395 /* PBXContainerItemProxy */;
+		};
+		FFAAAD2FD1BB4475456A98C28784B8E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RXSStoryblokClient_Example";
+			target = 4AF9C70D9D493948FD71617D29CB2325 /* Pods-RXSStoryblokClient_Example */;
+			targetProxy = F097D6506748366E00857B4AFE3378D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3550B9100B0653284C445B7733BA305F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RXSStoryblokClient/RXSStoryblokClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RXSStoryblokClient/RXSStoryblokClient-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RXSStoryblokClient/RXSStoryblokClient.modulemap";
+				PRODUCT_MODULE_NAME = RXSStoryblokClient;
+				PRODUCT_NAME = RXSStoryblokClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A0652B385DFBFAD380F711607A796C6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19EF1F0D4C57CD0F49F428340DDA4B4A /* Pods-RXSStoryblokClient_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RXSStoryblokClient_Tests/Pods-RXSStoryblokClient_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RXSStoryblokClient_Tests/Pods-RXSStoryblokClient_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B08DF65CFF81760EA89A7BF75CFA0FBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05750A17DBFECAB6DDC4DD31F18E32DE /* Pods-RXSStoryblokClient_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RXSStoryblokClient_Example/Pods-RXSStoryblokClient_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RXSStoryblokClient_Example/Pods-RXSStoryblokClient_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B3E2512FA1153F2890A184DF72BE0099 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F693D61D85FE6E2DF19A63127BC7BA0E /* Pods-RXSStoryblokClient_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RXSStoryblokClient_Tests/Pods-RXSStoryblokClient_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RXSStoryblokClient_Tests/Pods-RXSStoryblokClient_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C6CC3FA521EB58A1580FFC25ACBEB2D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F23F4C7C181AD311724412F0928005DB /* Pods-RXSStoryblokClient_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RXSStoryblokClient_Example/Pods-RXSStoryblokClient_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RXSStoryblokClient_Example/Pods-RXSStoryblokClient_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EC77E287C2E1A7E3A54AF4534DFF9DEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RXSStoryblokClient/RXSStoryblokClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RXSStoryblokClient/RXSStoryblokClient-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RXSStoryblokClient/RXSStoryblokClient.modulemap";
+				PRODUCT_MODULE_NAME = RXSStoryblokClient;
+				PRODUCT_NAME = RXSStoryblokClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12E9228749D8E8F316956C3ADE1A2452 /* Build configuration list for PBXNativeTarget "Pods-RXSStoryblokClient_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B08DF65CFF81760EA89A7BF75CFA0FBA /* Debug */,
+				C6CC3FA521EB58A1580FFC25ACBEB2D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99518EB3136E1394D0CFD7081CC254AC /* Build configuration list for PBXNativeTarget "RXSStoryblokClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC77E287C2E1A7E3A54AF4534DFF9DEB /* Debug */,
+				3550B9100B0653284C445B7733BA305F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D85369774808EBA513392682B81890BF /* Build configuration list for PBXNativeTarget "Pods-RXSStoryblokClient_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0652B385DFBFAD380F711607A796C6A /* Debug */,
+				B3E2512FA1153F2890A184DF72BE0099 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
