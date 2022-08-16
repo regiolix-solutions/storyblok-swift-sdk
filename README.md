@@ -1,4 +1,4 @@
-# Storyblok Swift SDK - 0.1
+# Storyblok Swift SDK - 0.1.0
 
 [![Version](https://img.shields.io/cocoapods/v/RXSStoryblokClient.svg?style=flat)](https://cocoapods.org/pods/RXSStoryblokClient)
 [![License](https://img.shields.io/cocoapods/l/RXSStoryblokClient.svg?style=flat)](https://cocoapods.org/pods/RXSStoryblokClient)
@@ -6,7 +6,7 @@
 
 ## TL;DR
 This is a Swift SDK/Wrapper around the Storyblok Delivery API and the Storyblok Management API. As of now, only Story fetching, creation and deletion is supported.
-### Version 0.1
+### Version 0.1.0
 * Added static `Storyblok` class for Client Management.
   * Configure and use the shared Client for basic use cases that only require 1 Client.
   * Create new Content Delivery or Management Clients managed by the static `Storyblok` class and retrieve them at a later time using an identifier.
