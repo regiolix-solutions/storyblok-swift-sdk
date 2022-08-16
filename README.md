@@ -153,6 +153,7 @@ Task(){
 You can configure the SDK on a global level by setting the static configurationDelegate property in the `Storyblok` class. To do so, the object you assign has to conform to the `StoryblokConfigurationDelegate`. Note that all of the protocol's functions have default implementations and are therefor not required.
 
 #### Custom DataConnection
+If you - for example - already use Alamofire in your project you can return your own implementation of the `DataConnection` protocol here. 
 ```swift
 func dataConnection() -> DataConnection
 ```
