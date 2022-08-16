@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB4C3E1B28A63C7C00F9AE5C /* RXS_Storyblok_Client.docc in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3E1A28A63C7C00F9AE5C /* RXS_Storyblok_Client.docc */; };
+		CB4C3E1C28A63C7C00F9AE5C /* RXS_Storyblok_Client.h in Headers */ = {isa = PBXBuildFile; fileRef = CB4C3E1928A63C7C00F9AE5C /* RXS_Storyblok_Client.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB4C3E2328A63C9300F9AE5C /* StoryblokClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3E2228A63C9300F9AE5C /* StoryblokClient.swift */; };
+		CB4C3E2628A63CB100F9AE5C /* RXSStoryblokClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3E2528A63CB100F9AE5C /* RXSStoryblokClient.swift */; };
+		CB4C3E2928A6554500F9AE5C /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3E2828A6554500F9AE5C /* Story.swift */; };
+		CB4C3E2C28A656EC00F9AE5C /* TranslatedSlug.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3E2B28A656EC00F9AE5C /* TranslatedSlug.swift */; };
+		CB4C3E2E28A6577700F9AE5C /* AlternateStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3E2D28A6577700F9AE5C /* AlternateStory.swift */; };
+		CB4C3E3028A6580500F9AE5C /* Stories.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3E2F28A6580500F9AE5C /* Stories.swift */; };
+		CB4C3E3228A6587500F9AE5C /* ManagementStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3E3128A6587500F9AE5C /* ManagementStory.swift */; };
+		CB4C3E3428A6593600F9AE5C /* StoryContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3E3328A6593600F9AE5C /* StoryContent.swift */; };
+		CB4C3E3628A65A9900F9AE5C /* ObjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3E3528A65A9900F9AE5C /* ObjectType.swift */; };
+		CB4C3E3828A65B7F00F9AE5C /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3E3728A65B7F00F9AE5C /* Operation.swift */; };
+		CB4C3E3A28A65BAB00F9AE5C /* StoryblokManagementQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3E3928A65BAB00F9AE5C /* StoryblokManagementQuery.swift */; };
+		CB4C3E3C28A65C6B00F9AE5C /* StoryblokQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3E3B28A65C6B00F9AE5C /* StoryblokQuery.swift */; };
+		CB4C3E3E28A65D5800F9AE5C /* StoryVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3E3D28A65D5800F9AE5C /* StoryVersion.swift */; };
+		CB4C3E4028A65DD600F9AE5C /* ResolveLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3E3F28A65DD600F9AE5C /* ResolveLinks.swift */; };
+		CB4C3E4228A65E0000F9AE5C /* FilterQueryParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3E4128A65E0000F9AE5C /* FilterQueryParameter.swift */; };
+		CB4C3E4428A65E3600F9AE5C /* FilterOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3E4328A65E3600F9AE5C /* FilterOperation.swift */; };
+		CB4C3E4828A678D500F9AE5C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3E4728A678D500F9AE5C /* Color.swift */; };
+		CB4C3E4A28A6790000F9AE5C /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3E4928A6790000F9AE5C /* Asset.swift */; };
+		CB4C3E4C28A67B4800F9AE5C /* StoryIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3E4B28A67B4800F9AE5C /* StoryIdentifier.swift */; };
+		CB4C3E5528A6974300F9AE5C /* Storyblok.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3E5428A6974300F9AE5C /* Storyblok.swift */; };
+		CB4C3E5728A6A02400F9AE5C /* DataConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3E5628A6A02400F9AE5C /* DataConnection.swift */; };
+		CB4C3E5A28A6A48200F9AE5C /* AssetUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3E5928A6A48200F9AE5C /* AssetUpload.swift */; };
+		CB4C3E5C28A6A4ED00F9AE5C /* Fields.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3E5B28A6A4ED00F9AE5C /* Fields.swift */; };
+		CB4C3E5E28A6A55600F9AE5C /* AssetUploadBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3E5D28A6A55600F9AE5C /* AssetUploadBody.swift */; };
+		CB4C3E6128A6A6A300F9AE5C /* RXSDataConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4C3E6028A6A6A300F9AE5C /* RXSDataConnection.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CB4C3E1628A63C7C00F9AE5C /* RXSStoryblok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RXSStoryblok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB4C3E1928A63C7C00F9AE5C /* RXS_Storyblok_Client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RXS_Storyblok_Client.h; sourceTree = "<group>"; };
+		CB4C3E1A28A63C7C00F9AE5C /* RXS_Storyblok_Client.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = RXS_Storyblok_Client.docc; sourceTree = "<group>"; };
+		CB4C3E2228A63C9300F9AE5C /* StoryblokClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryblokClient.swift; sourceTree = "<group>"; };
+		CB4C3E2528A63CB100F9AE5C /* RXSStoryblokClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXSStoryblokClient.swift; sourceTree = "<group>"; };
+		CB4C3E2828A6554500F9AE5C /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		CB4C3E2B28A656EC00F9AE5C /* TranslatedSlug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatedSlug.swift; sourceTree = "<group>"; };
+		CB4C3E2D28A6577700F9AE5C /* AlternateStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlternateStory.swift; sourceTree = "<group>"; };
+		CB4C3E2F28A6580500F9AE5C /* Stories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stories.swift; sourceTree = "<group>"; };
+		CB4C3E3128A6587500F9AE5C /* ManagementStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagementStory.swift; sourceTree = "<group>"; };
+		CB4C3E3328A6593600F9AE5C /* StoryContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryContent.swift; sourceTree = "<group>"; };
+		CB4C3E3528A65A9900F9AE5C /* ObjectType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectType.swift; sourceTree = "<group>"; };
+		CB4C3E3728A65B7F00F9AE5C /* Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		CB4C3E3928A65BAB00F9AE5C /* StoryblokManagementQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryblokManagementQuery.swift; sourceTree = "<group>"; };
+		CB4C3E3B28A65C6B00F9AE5C /* StoryblokQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryblokQuery.swift; sourceTree = "<group>"; };
+		CB4C3E3D28A65D5800F9AE5C /* StoryVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryVersion.swift; sourceTree = "<group>"; };
+		CB4C3E3F28A65DD600F9AE5C /* ResolveLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolveLinks.swift; sourceTree = "<group>"; };
+		CB4C3E4128A65E0000F9AE5C /* FilterQueryParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterQueryParameter.swift; sourceTree = "<group>"; };
+		CB4C3E4328A65E3600F9AE5C /* FilterOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOperation.swift; sourceTree = "<group>"; };
+		CB4C3E4728A678D500F9AE5C /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		CB4C3E4928A6790000F9AE5C /* Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		CB4C3E4B28A67B4800F9AE5C /* StoryIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryIdentifier.swift; sourceTree = "<group>"; };
+		CB4C3E5428A6974300F9AE5C /* Storyblok.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyblok.swift; sourceTree = "<group>"; };
+		CB4C3E5628A6A02400F9AE5C /* DataConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConnection.swift; sourceTree = "<group>"; };
+		CB4C3E5928A6A48200F9AE5C /* AssetUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetUpload.swift; sourceTree = "<group>"; };
+		CB4C3E5B28A6A4ED00F9AE5C /* Fields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fields.swift; sourceTree = "<group>"; };
+		CB4C3E5D28A6A55600F9AE5C /* AssetUploadBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetUploadBody.swift; sourceTree = "<group>"; };
+		CB4C3E6028A6A6A300F9AE5C /* RXSDataConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXSDataConnection.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB4C3E1328A63C7C00F9AE5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB4C3E0C28A63C7C00F9AE5C = {
+			isa = PBXGroup;
+			children = (
+				CB4C3E1828A63C7C00F9AE5C /* RXSStoryblok */,
+				CB4C3E1728A63C7C00F9AE5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB4C3E1728A63C7C00F9AE5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C3E1628A63C7C00F9AE5C /* RXSStoryblok.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB4C3E1828A63C7C00F9AE5C /* RXSStoryblok */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C3E5428A6974300F9AE5C /* Storyblok.swift */,
+				CB4C3E2728A6552500F9AE5C /* Model */,
+				CB4C3E5F28A6A68F00F9AE5C /* DataConnection */,
+				CB4C3E2428A63C9700F9AE5C /* Client */,
+				CB4C3E4D28A690DA00F9AE5C /* Queries */,
+				CB4C3E1928A63C7C00F9AE5C /* RXS_Storyblok_Client.h */,
+				CB4C3E1A28A63C7C00F9AE5C /* RXS_Storyblok_Client.docc */,
+			);
+			path = RXSStoryblok;
+			sourceTree = "<group>";
+		};
+		CB4C3E2428A63C9700F9AE5C /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C3E2228A63C9300F9AE5C /* StoryblokClient.swift */,
+				CB4C3E4B28A67B4800F9AE5C /* StoryIdentifier.swift */,
+				CB4C3E2528A63CB100F9AE5C /* RXSStoryblokClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		CB4C3E2728A6552500F9AE5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C3E5828A6A47500F9AE5C /* Asset */,
+				CB4C3E2A28A656DF00F9AE5C /* Content */,
+				CB4C3E3128A6587500F9AE5C /* ManagementStory.swift */,
+				CB4C3E2F28A6580500F9AE5C /* Stories.swift */,
+				CB4C3E2828A6554500F9AE5C /* Story.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB4C3E2A28A656DF00F9AE5C /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C3E2D28A6577700F9AE5C /* AlternateStory.swift */,
+				CB4C3E4928A6790000F9AE5C /* Asset.swift */,
+				CB4C3E4728A678D500F9AE5C /* Color.swift */,
+				CB4C3E3F28A65DD600F9AE5C /* ResolveLinks.swift */,
+				CB4C3E3328A6593600F9AE5C /* StoryContent.swift */,
+				CB4C3E3D28A65D5800F9AE5C /* StoryVersion.swift */,
+				CB4C3E2B28A656EC00F9AE5C /* TranslatedSlug.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		CB4C3E4D28A690DA00F9AE5C /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C3E3B28A65C6B00F9AE5C /* StoryblokQuery.swift */,
+				CB4C3E4E28A6912000F9AE5C /* Management */,
+				CB4C3E4F28A6912A00F9AE5C /* Filter */,
+			);
+			path = Queries;
+			sourceTree = "<group>";
+		};
+		CB4C3E4E28A6912000F9AE5C /* Management */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C3E3928A65BAB00F9AE5C /* StoryblokManagementQuery.swift */,
+				CB4C3E3728A65B7F00F9AE5C /* Operation.swift */,
+				CB4C3E3528A65A9900F9AE5C /* ObjectType.swift */,
+			);
+			path = Management;
+			sourceTree = "<group>";
+		};
+		CB4C3E4F28A6912A00F9AE5C /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C3E4128A65E0000F9AE5C /* FilterQueryParameter.swift */,
+				CB4C3E4328A65E3600F9AE5C /* FilterOperation.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		CB4C3E5828A6A47500F9AE5C /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C3E5928A6A48200F9AE5C /* AssetUpload.swift */,
+				CB4C3E5D28A6A55600F9AE5C /* AssetUploadBody.swift */,
+				CB4C3E5B28A6A4ED00F9AE5C /* Fields.swift */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		CB4C3E5F28A6A68F00F9AE5C /* DataConnection */ = {
+			isa = PBXGroup;
+			children = (
+				CB4C3E5628A6A02400F9AE5C /* DataConnection.swift */,
+				CB4C3E6028A6A6A300F9AE5C /* RXSDataConnection.swift */,
+			);
+			path = DataConnection;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CB4C3E1128A63C7C00F9AE5C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB4C3E1C28A63C7C00F9AE5C /* RXS_Storyblok_Client.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CB4C3E1528A63C7C00F9AE5C /* RXSStoryblok */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB4C3E1F28A63C7C00F9AE5C /* Build configuration list for PBXNativeTarget "RXSStoryblok" */;
+			buildPhases = (
+				CB4C3E1128A63C7C00F9AE5C /* Headers */,
+				CB4C3E1228A63C7C00F9AE5C /* Sources */,
+				CB4C3E1328A63C7C00F9AE5C /* Frameworks */,
+				CB4C3E1428A63C7C00F9AE5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RXSStoryblok;
+			productName = "RXS Storyblok Client";
+			productReference = CB4C3E1628A63C7C00F9AE5C /* RXSStoryblok.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB4C3E0D28A63C7C00F9AE5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					CB4C3E1528A63C7C00F9AE5C = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = CB4C3E1028A63C7C00F9AE5C /* Build configuration list for PBXProject "RXSStoryblok" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB4C3E0C28A63C7C00F9AE5C;
+			productRefGroup = CB4C3E1728A63C7C00F9AE5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB4C3E1528A63C7C00F9AE5C /* RXSStoryblok */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB4C3E1428A63C7C00F9AE5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB4C3E1228A63C7C00F9AE5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB4C3E5A28A6A48200F9AE5C /* AssetUpload.swift in Sources */,
+				CB4C3E3828A65B7F00F9AE5C /* Operation.swift in Sources */,
+				CB4C3E3628A65A9900F9AE5C /* ObjectType.swift in Sources */,
+				CB4C3E4228A65E0000F9AE5C /* FilterQueryParameter.swift in Sources */,
+				CB4C3E3E28A65D5800F9AE5C /* StoryVersion.swift in Sources */,
+				CB4C3E2C28A656EC00F9AE5C /* TranslatedSlug.swift in Sources */,
+				CB4C3E5C28A6A4ED00F9AE5C /* Fields.swift in Sources */,
+				CB4C3E4428A65E3600F9AE5C /* FilterOperation.swift in Sources */,
+				CB4C3E2628A63CB100F9AE5C /* RXSStoryblokClient.swift in Sources */,
+				CB4C3E2328A63C9300F9AE5C /* StoryblokClient.swift in Sources */,
+				CB4C3E4C28A67B4800F9AE5C /* StoryIdentifier.swift in Sources */,
+				CB4C3E3428A6593600F9AE5C /* StoryContent.swift in Sources */,
+				CB4C3E4A28A6790000F9AE5C /* Asset.swift in Sources */,
+				CB4C3E1B28A63C7C00F9AE5C /* RXS_Storyblok_Client.docc in Sources */,
+				CB4C3E5528A6974300F9AE5C /* Storyblok.swift in Sources */,
+				CB4C3E2E28A6577700F9AE5C /* AlternateStory.swift in Sources */,
+				CB4C3E2928A6554500F9AE5C /* Story.swift in Sources */,
+				CB4C3E3C28A65C6B00F9AE5C /* StoryblokQuery.swift in Sources */,
+				CB4C3E4028A65DD600F9AE5C /* ResolveLinks.swift in Sources */,
+				CB4C3E6128A6A6A300F9AE5C /* RXSDataConnection.swift in Sources */,
+				CB4C3E5728A6A02400F9AE5C /* DataConnection.swift in Sources */,
+				CB4C3E3A28A65BAB00F9AE5C /* StoryblokManagementQuery.swift in Sources */,
+				CB4C3E3228A6587500F9AE5C /* ManagementStory.swift in Sources */,
+				CB4C3E5E28A6A55600F9AE5C /* AssetUploadBody.swift in Sources */,
+				CB4C3E3028A6580500F9AE5C /* Stories.swift in Sources */,
+				CB4C3E4828A678D500F9AE5C /* Color.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CB4C3E1D28A63C7C00F9AE5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CB4C3E1E28A63C7C00F9AE5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CB4C3E2028A63C7C00F9AE5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8U69K39JJB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "at.regiolix-solutions.RXS-Storyblok-Client";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB4C3E2128A63C7C00F9AE5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8U69K39JJB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "at.regiolix-solutions.RXS-Storyblok-Client";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB4C3E1028A63C7C00F9AE5C /* Build configuration list for PBXProject "RXSStoryblok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB4C3E1D28A63C7C00F9AE5C /* Debug */,
+				CB4C3E1E28A63C7C00F9AE5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB4C3E1F28A63C7C00F9AE5C /* Build configuration list for PBXNativeTarget "RXSStoryblok" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB4C3E2028A63C7C00F9AE5C /* Debug */,
+				CB4C3E2128A63C7C00F9AE5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB4C3E0D28A63C7C00F9AE5C /* Project object */;
+}
