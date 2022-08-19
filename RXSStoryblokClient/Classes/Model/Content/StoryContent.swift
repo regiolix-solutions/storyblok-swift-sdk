@@ -10,9 +10,4 @@ import Foundation
 open class StoryContent: Codable{
     public let _uid: String
     public let component: String
-    
-    init(_uid: String, component: String){
-        self._uid = _uid
-        self.component = component
-    }
 }
