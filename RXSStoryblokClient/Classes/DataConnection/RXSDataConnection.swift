@@ -58,7 +58,13 @@ public class RXSDataConnection: DataConnection{
         var request = URLRequest(url: url)
         request.httpMethod = "DELETE"
         
-        _ = try await config.session.data(for: request, delegate: nil)
+        if #available(iOS 15.0, *) {
+            _ = try await config.session.data(for: request, delegate: nil)
+        } else {
+            _ = try await withCheckedThrowingContinuation({ continuation in
+                startDataTaskWithCheckedThrowingContinuation(onSession: config.session, forRequest: request, andContinuation: continuation)
+            })
+        }
     }
     
     public func sendMultipartRequest<ResponseObject: Decodable>(forPath path: String, sendingImage image: UIImage, options: [DCOption]) async throws -> ResponseObject? {
@@ -74,9 +80,17 @@ public class RXSDataConnection: DataConnection{
         request.httpMethod = httpMethod
         request.httpBody = data(fromEncodable: body, withDateEncodingStrategy: config.dateEncodingStrategy)
         
-        let response = try await config.session.data(for: request, delegate: nil)
+        var response: (data: Data, urlResponse: URLResponse)!
         
-        return try handle(responseData: response.0, dateDecodingStrategy: config.dateDecodingStrategy)
+        if #available(iOS 15.0, *) {
+            response = try await config.session.data(for: request, delegate: nil)
+        } else {
+            response = try await withCheckedThrowingContinuation({ continuation in
+                startDataTaskWithCheckedThrowingContinuation(onSession: config.session, forRequest: request, andContinuation: continuation)
+            })
+        }
+        
+        return try handle(responseData: response.data, dateDecodingStrategy: config.dateDecodingStrategy)
     }
     
     private func sendRequest<ResponseObject: Decodable>(forPath path: String, withHttpMethod httpMethod: String, options: [DCOption]) async throws -> ResponseObject? {
@@ -86,9 +100,29 @@ public class RXSDataConnection: DataConnection{
         var request = URLRequest(url: url)
         request.httpMethod = httpMethod
         
-        let response = try await config.session.data(for: request, delegate: nil)
+        var response: (data: Data, urlResponse: URLResponse)!
         
-        return try handle(responseData: response.0, dateDecodingStrategy: config.dateDecodingStrategy)
+        if #available(iOS 15.0, *) {
+            response = try await config.session.data(for: request, delegate: nil)
+        } else {
+            response = try await withCheckedThrowingContinuation({ continuation in
+                startDataTaskWithCheckedThrowingContinuation(onSession: config.session, forRequest: request, andContinuation: continuation)
+            })
+        }
+        
+        return try handle(responseData: response.data, dateDecodingStrategy: config.dateDecodingStrategy)
+    }
+    
+    private func startDataTaskWithCheckedThrowingContinuation(onSession session: URLSession, forRequest request: URLRequest, andContinuation continuation: CheckedContinuation<(Data, URLResponse)?, Error>){
+        session.dataTask(with: request) { data, urlResponse, error in
+            if let error = error{
+                continuation.resume(with: .failure(error))
+            }else if let data = data, let urlResponse = urlResponse{
+                continuation.resume(with: .success((data, urlResponse)))
+            }else{
+                continuation.resume(with: .success(nil))
+            }
+        }
     }
 }
 
