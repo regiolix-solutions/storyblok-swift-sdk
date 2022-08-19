@@ -255,13 +255,6 @@ public class StoryblokMultiStoryQuery: StoryblokQuery{
     public static func queryForStories() -> StoryblokMultiStoryQuery{
         return StoryblokMultiStoryQuery()
     }
-}
-
-public class StoryblokSingleStoryQuery: StoryblokQuery{
-    /// Create a new Builder for single stories
-    public static func queryForStory() -> StoryblokSingleStoryQuery{
-        return StoryblokSingleStoryQuery()
-    }
     
     /// Search content items by full text.
     public func matchingSearchTerm(_ searchTerm: String) -> Self{
@@ -391,5 +384,12 @@ public class StoryblokSingleStoryQuery: StoryblokQuery{
     public func thatAreStartPages(_ startPage: Bool) -> Self{
         self.isStartPage = startPage
         return self
+    }
+}
+
+public class StoryblokSingleStoryQuery: StoryblokQuery{
+    /// Create a new Builder for single stories
+    public static func queryForStory() -> StoryblokSingleStoryQuery{
+        return StoryblokSingleStoryQuery()
     }
 }
