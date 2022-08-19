@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Stories<T: Codable>: Codable{
+public struct Stories<T: StoryContent>: Codable{
     public let stories: [Story<T>]
     public let perPage: Int?
     public let total: Int?

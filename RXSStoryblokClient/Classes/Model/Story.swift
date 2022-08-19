@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Story<T: Codable>: Codable{
+public struct Story<T: StoryContent>: Codable{
     public let id: Int64
     public let uuid: UUID
     public let name: String
