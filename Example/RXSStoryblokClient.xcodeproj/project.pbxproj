@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		7E2C2852A97057FD7160ED31 /* Pods_RXSStoryblokClient_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B22B984506D04F7CA00E6537 /* Pods_RXSStoryblokClient_Example.framework */; };
+		CBB22C8C28AE800B005F8A11 /* SBBlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB22C8B28AE800B005F8A11 /* SBBlogPost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		8F1AC6100405DE2119506D68 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B22B984506D04F7CA00E6537 /* Pods_RXSStoryblokClient_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RXSStoryblokClient_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB681184D31BD017BA2DFD6F /* Pods-RXSStoryblokClient_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXSStoryblokClient_Tests.release.xcconfig"; path = "Target Support Files/Pods-RXSStoryblokClient_Tests/Pods-RXSStoryblokClient_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		CBB22C8B28AE800B005F8A11 /* SBBlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBBlogPost.swift; sourceTree = "<group>"; };
 		D2DC6A38F66F0EF46E24F86E /* Pods-RXSStoryblokClient_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXSStoryblokClient_Example.release.xcconfig"; path = "Target Support Files/Pods-RXSStoryblokClient_Example/Pods-RXSStoryblokClient_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E775B38710D6E064CF72EC4D /* Pods-RXSStoryblokClient_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXSStoryblokClient_Tests.debug.xcconfig"; path = "Target Support Files/Pods-RXSStoryblokClient_Tests/Pods-RXSStoryblokClient_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EA771B2D75FD50FB092E87C3 /* Pods_RXSStoryblokClient_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RXSStoryblokClient_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +95,7 @@
 		607FACD21AFB9204008FA782 /* Example for RXSStoryblokClient */ = {
 			isa = PBXGroup;
 			children = (
+				CBB22C8A28AE7FB3005F8A11 /* Model */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* TableViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -157,6 +160,14 @@
 				EA771B2D75FD50FB092E87C3 /* Pods_RXSStoryblokClient_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBB22C8A28AE7FB3005F8A11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBB22C8B28AE800B005F8A11 /* SBBlogPost.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBB22C8C28AE800B005F8A11 /* SBBlogPost.swift in Sources */,
 				607FACD81AFB9204008FA782 /* TableViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);

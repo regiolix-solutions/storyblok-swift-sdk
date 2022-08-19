@@ -34,6 +34,13 @@
 		C08236C68CDDA246B1266AC67E148608 /* StoryblokManagementQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F74F4BE9050B0F0AAC0140E17AF1B4D /* StoryblokManagementQuery.swift */; };
 		C52D96C56B5C0488963E419537687087 /* StoryblokClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F9D94DB579E6B360533A1587574E1F /* StoryblokClient.swift */; };
 		C9F8DC5424D7C137CCBC5CACD47FCA6A /* TranslatedSlug.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03093FF06329742253EB7031398A550 /* TranslatedSlug.swift */; };
+		CBB22C8D28AE806D005F8A11 /* RichTextSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB22C7728AE5483005F8A11 /* RichTextSchema.swift */; };
+		CBB22C8E28AE8073005F8A11 /* HtmlSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB22C8528AE679B005F8A11 /* HtmlSchema.swift */; };
+		CBB22C8F28AE8077005F8A11 /* RichTextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB22C7928AE563B005F8A11 /* RichTextNode.swift */; };
+		CBB22C9028AE807B005F8A11 /* NodeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB22C7B28AE5697005F8A11 /* NodeType.swift */; };
+		CBB22C9128AE807B005F8A11 /* NodeAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB22C8028AE6101005F8A11 /* NodeAttributes.swift */; };
+		CBB22C9228AE807B005F8A11 /* NodeMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB22C8328AE6190005F8A11 /* NodeMark.swift */; };
+		CBB22C9328AE807E005F8A11 /* RichTextResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB22C8828AE7AFC005F8A11 /* RichTextResolver.swift */; };
 		D9FCAEC80AAB6725A149564111F68768 /* ObjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5559A74E500E28E48D1EDEC3CFB0985 /* ObjectType.swift */; };
 		DC460BCC81C521310C09C18189C58190 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		F5DEA8A1F6B157887795289860F83B3B /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1953E8D996714EBA89FC5BE616F3E023 /* Asset.swift */; };
@@ -70,11 +77,11 @@
 		19EF1F0D4C57CD0F49F428340DDA4B4A /* Pods-RXSStoryblokClient_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RXSStoryblokClient_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		1CB420E5AD6D999047964685888361B3 /* Pods-RXSStoryblokClient_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RXSStoryblokClient_Example-frameworks.sh"; sourceTree = "<group>"; };
 		1FEA0EBE6D7D63A677D5A94FE9CF05E9 /* AlternateStory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlternateStory.swift; sourceTree = "<group>"; };
-		228BFA5362AFBE03D7D0B723757F555A /* RXSStoryblokClient */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RXSStoryblokClient; path = RXSStoryblokClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		228BFA5362AFBE03D7D0B723757F555A /* RXSStoryblokClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RXSStoryblokClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22CCA572366F922838575D98E50CFEA0 /* Operation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
 		2D92AEE145D9DB01B27C7FCF03511B88 /* StoryVersion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StoryVersion.swift; sourceTree = "<group>"; };
-		2EF557554F2B367335A7C456196A9F72 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		3000B9C4524CFA4DD96CDDA50C5F3FAE /* Pods-RXSStoryblokClient_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-RXSStoryblokClient_Example"; path = Pods_RXSStoryblokClient_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EF557554F2B367335A7C456196A9F72 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3000B9C4524CFA4DD96CDDA50C5F3FAE /* Pods_RXSStoryblokClient_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RXSStoryblokClient_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38232A65260EF4CE6DB2998CF6ABD7CB /* Pods-RXSStoryblokClient_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RXSStoryblokClient_Tests-umbrella.h"; sourceTree = "<group>"; };
 		4599AEBC7D67384E6EC7C8F90B019B17 /* StoryblokQuery.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StoryblokQuery.swift; sourceTree = "<group>"; };
 		47527B31EB64EAB049A39FC22F338F33 /* Story.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
@@ -95,7 +102,7 @@
 		8C2E99E2545C41D4FBC72FD97967D587 /* Pods-RXSStoryblokClient_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RXSStoryblokClient_Tests.modulemap"; sourceTree = "<group>"; };
 		96025E0F24707FA9E3F2804277CCFD3E /* Storyblok.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Storyblok.swift; path = RXSStoryblokClient/Classes/Storyblok.swift; sourceTree = "<group>"; };
 		9ACA0D1BE21C288C47037448944B681F /* RXSStoryblokClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RXSStoryblokClient.debug.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A03093FF06329742253EB7031398A550 /* TranslatedSlug.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TranslatedSlug.swift; sourceTree = "<group>"; };
 		A26C31E43C70520B5468FE0D6E0B639A /* AssetUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AssetUpload.swift; sourceTree = "<group>"; };
 		A442EF482B5EAF7B3CDFEE97429B6CB8 /* Pods-RXSStoryblokClient_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RXSStoryblokClient_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -106,11 +113,18 @@
 		C5559A74E500E28E48D1EDEC3CFB0985 /* ObjectType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ObjectType.swift; sourceTree = "<group>"; };
 		C56D8F2D7BE2F7069CDE078A9429B2C7 /* Pods-RXSStoryblokClient_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RXSStoryblokClient_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		C644E38E19815C5C56842B3568BA2DC2 /* DataConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DataConnection.swift; sourceTree = "<group>"; };
-		C7D1DA37F0DA3EAE77B6790FA2A9C438 /* Pods-RXSStoryblokClient_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-RXSStoryblokClient_Tests"; path = Pods_RXSStoryblokClient_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7D1DA37F0DA3EAE77B6790FA2A9C438 /* Pods_RXSStoryblokClient_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RXSStoryblokClient_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB22C7728AE5483005F8A11 /* RichTextSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichTextSchema.swift; sourceTree = "<group>"; };
+		CBB22C7928AE563B005F8A11 /* RichTextNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichTextNode.swift; sourceTree = "<group>"; };
+		CBB22C7B28AE5697005F8A11 /* NodeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeType.swift; sourceTree = "<group>"; };
+		CBB22C8028AE6101005F8A11 /* NodeAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeAttributes.swift; sourceTree = "<group>"; };
+		CBB22C8328AE6190005F8A11 /* NodeMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeMark.swift; sourceTree = "<group>"; };
+		CBB22C8528AE679B005F8A11 /* HtmlSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HtmlSchema.swift; sourceTree = "<group>"; };
+		CBB22C8828AE7AFC005F8A11 /* RichTextResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichTextResolver.swift; sourceTree = "<group>"; };
 		D0AF049EC9B3D366D6CE2CF796A85ECB /* StoryContent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StoryContent.swift; sourceTree = "<group>"; };
-		D12FA647318E4E9C9703851AD32F0832 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		D12FA647318E4E9C9703851AD32F0832 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D28792CC2C7204B461F065D3B1FC39FD /* RXSStoryblokClient-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RXSStoryblokClient-Info.plist"; sourceTree = "<group>"; };
-		DA442BF946333A9AC6B9FBA6A4619EB7 /* RXSStoryblokClient.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = RXSStoryblokClient.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DA442BF946333A9AC6B9FBA6A4619EB7 /* RXSStoryblokClient.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = RXSStoryblokClient.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DC097C8372D2DD072C66C19B79E885BB /* RXSStoryblokClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RXSStoryblokClient-prefix.pch"; sourceTree = "<group>"; };
 		DF3A0C0A518F38481586726C7BB066B3 /* FilterQueryParameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FilterQueryParameter.swift; sourceTree = "<group>"; };
 		E4F9D94DB579E6B360533A1587574E1F /* StoryblokClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StoryblokClient.swift; sourceTree = "<group>"; };
@@ -178,9 +192,9 @@
 		3A38A1F1815A61806B14DBE6AEA5C044 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3000B9C4524CFA4DD96CDDA50C5F3FAE /* Pods-RXSStoryblokClient_Example */,
-				C7D1DA37F0DA3EAE77B6790FA2A9C438 /* Pods-RXSStoryblokClient_Tests */,
-				228BFA5362AFBE03D7D0B723757F555A /* RXSStoryblokClient */,
+				3000B9C4524CFA4DD96CDDA50C5F3FAE /* Pods_RXSStoryblokClient_Example.framework */,
+				C7D1DA37F0DA3EAE77B6790FA2A9C438 /* Pods_RXSStoryblokClient_Tests.framework */,
+				228BFA5362AFBE03D7D0B723757F555A /* RXSStoryblokClient.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -252,7 +266,6 @@
 				2D92AEE145D9DB01B27C7FCF03511B88 /* StoryVersion.swift */,
 				A03093FF06329742253EB7031398A550 /* TranslatedSlug.swift */,
 			);
-			name = Content;
 			path = Content;
 			sourceTree = "<group>";
 		};
@@ -270,6 +283,36 @@
 			);
 			name = "Pods-RXSStoryblokClient_Tests";
 			path = "Target Support Files/Pods-RXSStoryblokClient_Tests";
+			sourceTree = "<group>";
+		};
+		CBB22C7528AE535F005F8A11 /* RichTextResolver */ = {
+			isa = PBXGroup;
+			children = (
+				CBB22C8728AE7AEC005F8A11 /* Schema */,
+				CBB22C7F28AE5CE8005F8A11 /* Model */,
+				CBB22C8828AE7AFC005F8A11 /* RichTextResolver.swift */,
+			);
+			path = RichTextResolver;
+			sourceTree = "<group>";
+		};
+		CBB22C7F28AE5CE8005F8A11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBB22C7928AE563B005F8A11 /* RichTextNode.swift */,
+				CBB22C7B28AE5697005F8A11 /* NodeType.swift */,
+				CBB22C8028AE6101005F8A11 /* NodeAttributes.swift */,
+				CBB22C8328AE6190005F8A11 /* NodeMark.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBB22C8728AE7AEC005F8A11 /* Schema */ = {
+			isa = PBXGroup;
+			children = (
+				CBB22C7728AE5483005F8A11 /* RichTextSchema.swift */,
+				CBB22C8528AE679B005F8A11 /* HtmlSchema.swift */,
+			);
+			path = Schema;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -298,7 +341,6 @@
 				22CCA572366F922838575D98E50CFEA0 /* Operation.swift */,
 				5F74F4BE9050B0F0AAC0140E17AF1B4D /* StoryblokManagementQuery.swift */,
 			);
-			name = Management;
 			path = Management;
 			sourceTree = "<group>";
 		};
@@ -326,6 +368,7 @@
 		E72767102078487B1AD1EBFF5B7834AB /* RXSStoryblokClient */ = {
 			isa = PBXGroup;
 			children = (
+				CBB22C7528AE535F005F8A11 /* RichTextResolver */,
 				96025E0F24707FA9E3F2804277CCFD3E /* Storyblok.swift */,
 				E4A1E605B89821EF22A892EF6A299758 /* Client */,
 				005D6991F66ACC53C19A4AF1F2F52294 /* DataConnection */,
@@ -353,7 +396,6 @@
 				B58D7463A93D683FB11ADCAF237FF297 /* AssetUploadBody.swift */,
 				816F71592FE1EFF943B24CECDA8E59B6 /* Fields.swift */,
 			);
-			name = Asset;
 			path = Asset;
 			sourceTree = "<group>";
 		};
@@ -363,7 +405,6 @@
 				7B072A8BD2039DD631E7F9DFDA160F6A /* FilterOperation.swift */,
 				DF3A0C0A518F38481586726C7BB066B3 /* FilterQueryParameter.swift */,
 			);
-			name = Filter;
 			path = Filter;
 			sourceTree = "<group>";
 		};
@@ -413,7 +454,7 @@
 			);
 			name = "Pods-RXSStoryblokClient_Tests";
 			productName = Pods_RXSStoryblokClient_Tests;
-			productReference = C7D1DA37F0DA3EAE77B6790FA2A9C438 /* Pods-RXSStoryblokClient_Tests */;
+			productReference = C7D1DA37F0DA3EAE77B6790FA2A9C438 /* Pods_RXSStoryblokClient_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4AF9C70D9D493948FD71617D29CB2325 /* Pods-RXSStoryblokClient_Example */ = {
@@ -432,7 +473,7 @@
 			);
 			name = "Pods-RXSStoryblokClient_Example";
 			productName = Pods_RXSStoryblokClient_Example;
-			productReference = 3000B9C4524CFA4DD96CDDA50C5F3FAE /* Pods-RXSStoryblokClient_Example */;
+			productReference = 3000B9C4524CFA4DD96CDDA50C5F3FAE /* Pods_RXSStoryblokClient_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9598D74A56CEE8406D66BA14C1D8EF45 /* RXSStoryblokClient */ = {
@@ -450,7 +491,7 @@
 			);
 			name = RXSStoryblokClient;
 			productName = RXSStoryblokClient;
-			productReference = 228BFA5362AFBE03D7D0B723757F555A /* RXSStoryblokClient */;
+			productReference = 228BFA5362AFBE03D7D0B723757F555A /* RXSStoryblokClient.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -461,6 +502,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					4AF9C70D9D493948FD71617D29CB2325 = {
+						LastSwiftMigration = 1340;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -511,15 +557,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBB22C9328AE807E005F8A11 /* RichTextResolver.swift in Sources */,
 				BC4A5CE80C81AF03D3331D69DF8E2820 /* AlternateStory.swift in Sources */,
 				F5DEA8A1F6B157887795289860F83B3B /* Asset.swift in Sources */,
 				B13BC2596A0CFD574B558C0C2A052357 /* AssetUpload.swift in Sources */,
+				CBB22C9028AE807B005F8A11 /* NodeType.swift in Sources */,
 				14F916D4557D05B54DDD7166035E04DB /* AssetUploadBody.swift in Sources */,
 				F826F121B6130C1C54480DD65FD3AE95 /* Color.swift in Sources */,
 				9F1CBC3757EFCA16E96B9747D93E6E8F /* DataConnection.swift in Sources */,
 				9BE029FB252E49AFD2B9B2049F373B4E /* Fields.swift in Sources */,
 				77E09C859ECC3D2BEC30954C2A03071D /* FilterOperation.swift in Sources */,
 				46DB9BD7A0F2B8B4F40B22E964804296 /* FilterQueryParameter.swift in Sources */,
+				CBB22C9128AE807B005F8A11 /* NodeAttributes.swift in Sources */,
 				1532FB75B06DC71EE592B19E10645337 /* ManagementStory.swift in Sources */,
 				D9FCAEC80AAB6725A149564111F68768 /* ObjectType.swift in Sources */,
 				AAD1A2ADF3BC162CBF3E5A23D789FE5B /* Operation.swift in Sources */,
@@ -528,14 +577,18 @@
 				A02C5FC894A70885DBA8A59DE0A882F7 /* RXSStoryblokClient.swift in Sources */,
 				1442505AE4A0F078CF4016BB4B91AC87 /* RXSStoryblokClient-dummy.m in Sources */,
 				297C69AECB56811A3593B3FD6B2C6813 /* Stories.swift in Sources */,
+				CBB22C8E28AE8073005F8A11 /* HtmlSchema.swift in Sources */,
 				39E3DBAD65A85E17DE185D80D9F4640A /* Story.swift in Sources */,
+				CBB22C8D28AE806D005F8A11 /* RichTextSchema.swift in Sources */,
 				3621F646E1FFCECB7F404909A0D4AAD2 /* Storyblok.swift in Sources */,
 				C52D96C56B5C0488963E419537687087 /* StoryblokClient.swift in Sources */,
 				C08236C68CDDA246B1266AC67E148608 /* StoryblokManagementQuery.swift in Sources */,
 				FC9D2BA5D08885AF7FFB669051CC8C1D /* StoryblokQuery.swift in Sources */,
+				CBB22C9228AE807B005F8A11 /* NodeMark.swift in Sources */,
 				5DC0F7A9EB006CCF3C1DDE1DC7F7A3D7 /* StoryContent.swift in Sources */,
 				F8E9EDC324548C1A1260497AC8E0B4C5 /* StoryIdentifier.swift in Sources */,
 				30DFA913EE9D52F6D4F323E4C3D7EEDD /* StoryVersion.swift in Sources */,
+				CBB22C8F28AE8077005F8A11 /* RichTextNode.swift in Sources */,
 				C9F8DC5424D7C137CCBC5CACD47FCA6A /* TranslatedSlug.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -624,13 +677,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -652,7 +704,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/RXSStoryblokClient/RXSStoryblokClient-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/RXSStoryblokClient/RXSStoryblokClient-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/RXSStoryblokClient/RXSStoryblokClient.modulemap";
 				PRODUCT_MODULE_NAME = RXSStoryblokClient;
@@ -684,7 +736,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-RXSStoryblokClient_Tests/Pods-RXSStoryblokClient_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-RXSStoryblokClient_Tests/Pods-RXSStoryblokClient_Tests.modulemap";
@@ -706,6 +758,7 @@
 			baseConfigurationReference = 05750A17DBFECAB6DDC4DD31F18E32DE /* Pods-RXSStoryblokClient_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -717,7 +770,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-RXSStoryblokClient_Example/Pods-RXSStoryblokClient_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-RXSStoryblokClient_Example/Pods-RXSStoryblokClient_Example.modulemap";
@@ -728,6 +781,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -750,7 +805,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-RXSStoryblokClient_Tests/Pods-RXSStoryblokClient_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-RXSStoryblokClient_Tests/Pods-RXSStoryblokClient_Tests.modulemap";
@@ -773,6 +828,7 @@
 			baseConfigurationReference = F23F4C7C181AD311724412F0928005DB /* Pods-RXSStoryblokClient_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -784,7 +840,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-RXSStoryblokClient_Example/Pods-RXSStoryblokClient_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-RXSStoryblokClient_Example/Pods-RXSStoryblokClient_Example.modulemap";
@@ -795,6 +851,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -818,7 +875,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/RXSStoryblokClient/RXSStoryblokClient-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/RXSStoryblokClient/RXSStoryblokClient-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/RXSStoryblokClient/RXSStoryblokClient.modulemap";
 				PRODUCT_MODULE_NAME = RXSStoryblokClient;
@@ -886,7 +943,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
