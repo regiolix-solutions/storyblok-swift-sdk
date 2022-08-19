@@ -11,7 +11,7 @@ import RXSStoryblokClient
 
 class TableViewController: UITableViewController {
     
-    private var stories = [Story<StoryContent>]() {
+    private var stories = [Story<SBBlogPost>]() {
         didSet{
             tableView.reloadData()
         }
@@ -22,15 +22,16 @@ class TableViewController: UITableViewController {
         Task(){
             do{
                 Storyblok.shared.configureForContentDeliveryAccess(apiKey: "3nogoFf7qI8bbvrwtaXQAQtt")
-                
-                if let response: Stories<StoryContent> = try await Storyblok.shared.fetchStories(applying:
+
+                if let response: Stories<SBBlogPost> = try await Storyblok.shared.fetchStories(applying:
                         .queryForStories()
-                        .startingWith("blog")
+                        .startingWith("richtext")
                 ){
                     stories = response.stories
                 }
-            } catch {
-                // .. handle error
+
+            } catch (let error){
+                print(error)
             }
         }
     }
@@ -57,5 +58,18 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         stories.count
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let story = stories[indexPath.row]
+        var html = ""
+        let outermostNode = story.content.richtext
+        RichTextResolver.resolveNode(outermostNode, applyingSchema: HtmlSchema.self, into: &html)
+        
+        DispatchQueue.main.async {
+            let alert = UIAlertController(title: "Richtext HTML", message: html, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default))
+            self.present(alert, animated: true)
+        }
+    }
 }
-
