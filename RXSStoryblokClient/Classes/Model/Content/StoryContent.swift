@@ -7,9 +7,9 @@
 
 import Foundation
 
-public class StoryContent: Codable{
-    let _uid: String
-    let component: String
+open class StoryContent: Codable{
+    public let _uid: String
+    public let component: String
     
     init(_uid: String, component: String){
         self._uid = _uid
