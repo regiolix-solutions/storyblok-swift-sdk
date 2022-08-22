@@ -186,10 +186,10 @@ The `RichTextNode` struct defines the structure of a RichText Object as received
 The `RichTextSchema` protocol defines a function used to transform a given `RichTextNode` to any other usable format.
 
 ##### HtmlSchema
-The `HtmlSchema` class is an implementation of the `RichTextSchema`protocol that transforms a given `RichTextNode`to a HTML String.
+The `HtmlSchema` class is an implementation of the `RichTextSchema` protocol that transforms a given `RichTextNode` to an HTML String.
 
 #### RichTextResolver
-The `RichTextResolver` class implements the following function, which can be used to transform a fiven `RichTextNode`to some other format using any RichTextSchema Implementation.
+The `RichTextResolver` class implements the following function, which can be used to transform a given `RichTextNode` to some other format using any RichTextSchema Implementation.
 
 ```swift
 public static func resolveNode<Schema: RichTextSchema>(_ node: RichTextNode, applyingSchema schema: Schema.Type, into initialValue: inout Schema.T)
