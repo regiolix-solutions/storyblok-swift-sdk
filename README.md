@@ -5,7 +5,12 @@
 [![Platform](https://img.shields.io/cocoapods/p/RXSStoryblokClient.svg?style=flat)](https://cocoapods.org/pods/RXSStoryblokClient)
 
 ## TL;DR
-This is a Swift SDK/Wrapper around the Storyblok Delivery API and the Storyblok Management API. As of now, only Story fetching, creation and deletion is supported.
+This is a Swift SDK/Wrapper around the Storyblok Delivery API and the Storyblok Management API. As of now, only Story fetching, creation and deletion is supported. Additionally there is are Utility and Model classes for resolving RichText Objects from Storyblok (As of now there is only an Implementation for transforming the object to an HTML String)
+
+### Version 0.1.1
+* Added Utility and Model classes for resolving RichText Objects from Storyblok
+* The SDK's Minimum Deployment Target is now iOS 13.0
+* Resolved some minor issues
 ### Version 0.1.0
 * Added static `Storyblok` class for Client Management.
   * Configure and use the shared Client for basic use cases that only require 1 Client.
@@ -170,6 +175,26 @@ func timeoutIntervalForResource() -> TimeInterval
 ```swift
 func allowsCellularAccessForBackgroundDownloads() -> Bool
 ```
+
+## Richtext Resolving
+This SDK contains Utility and Model classes for resolving a RichText Object from Storyblok.
+
+#### RichTextNode
+The `RichTextNode` struct defines the structure of a RichText Object as received by Storyblok's APIs and can be de-/serialized for communication with said APIs.
+
+#### RichTextSchema
+The `RichTextSchema` protocol defines a function used to transform a given `RichTextNode` to any other usable format.
+
+##### HtmlSchema
+The `HtmlSchema` class is an implementation of the `RichTextSchema`protocol that transforms a given `RichTextNode`to a HTML String.
+
+#### RichTextResolver
+The `RichTextResolver` class implements the following function, which can be used to transform a fiven `RichTextNode`to some other format using any RichTextSchema Implementation.
+
+```swift
+public static func resolveNode<Schema: RichTextSchema>(_ node: RichTextNode, applyingSchema schema: Schema.Type, into initialValue: inout Schema.T)
+```
+
 
 # Author
 
