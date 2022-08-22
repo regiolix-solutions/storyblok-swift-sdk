@@ -1,4 +1,4 @@
-# Storyblok Swift SDK - 0.1.0
+# Storyblok Swift SDK - 0.1.1
 
 [![Version](https://img.shields.io/cocoapods/v/RXSStoryblokClient.svg?style=flat)](https://cocoapods.org/pods/RXSStoryblokClient)
 [![License](https://img.shields.io/cocoapods/l/RXSStoryblokClient.svg?style=flat)](https://cocoapods.org/pods/RXSStoryblokClient)
