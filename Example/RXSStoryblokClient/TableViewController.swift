@@ -45,12 +45,18 @@ class TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let story = stories[indexPath.row]
         
-        var content = cell.defaultContentConfiguration()
+        if #available(iOS 14.0, *) {
+            var content = cell.defaultContentConfiguration()
+            
+            content.text = story.name
+            content.secondaryText = story.fullSlug
+            
+            cell.contentConfiguration = content
+        } else {
+            cell.textLabel?.text = story.name
+            cell.detailTextLabel?.text = story.fullSlug
+        }
         
-        content.text = story.name
-        content.secondaryText = story.fullSlug
-        
-        cell.contentConfiguration = content
         
         return cell
     }
