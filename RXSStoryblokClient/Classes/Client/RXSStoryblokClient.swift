@@ -64,18 +64,18 @@ public class RXSStoryblokClient: StoryblokClient{
     //MARK: Public API
     
     //Content Delivery V2 API
-    public func fetchStory<T: StoryContent>(identifiedBy identifier: StoryIdentifier) async throws -> Story<T>? {
+    public func fetchStory<T: StoryContent>(identifiedBy identifier: StoryIdentifier) async throws -> SingleStory<T>? {
         let path = CONTENT_DELIVERY_V2_API_URL + "/stories/" + path(forStoryIdentifier: identifier)
-        return try await Storyblok.configurationDelegate?.dataConnection().sendGetRequest(
+        return try await Storyblok.dataConnection.sendGetRequest(
             forPath: path,
             options: defaultOptions(withNetworkingType: .Default)
         )
     }
     
     //Content Delivery V2 API
-    public func fetchStory<T: StoryContent>(identifiedBy identifier: StoryIdentifier, applying query: StoryblokSingleStoryQuery) async throws -> Story<T>? {
+    public func fetchStory<T: StoryContent>(identifiedBy identifier: StoryIdentifier, applying query: StoryblokSingleStoryQuery) async throws -> SingleStory<T>? {
         let path = CONTENT_DELIVERY_V2_API_URL + "/stories/" + path(forStoryIdentifier: identifier) + query.description
-        return try await Storyblok.configurationDelegate?.dataConnection().sendGetRequest(
+        return try await Storyblok.dataConnection.sendGetRequest(
             forPath: path,
             options: defaultOptions(withNetworkingType: .Default)
         )
