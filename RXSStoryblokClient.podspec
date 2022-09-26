@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RXSStoryblokClient'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'A lightweight pure Swift SDK for the Storyblok Content Delivery and Management APIs'
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
   'This is a Swift SDK/Wrapper around the Storyblok Delivery API and the Storyblok Management API. The purpose of this Pod is to make using said APIs easier, quicker and more readable.'
                        DESC
 
-  s.homepage         = 'https://github.com/regiolix-solutions/storyblok-swift-sdk'
+  s.homepage         = 'https://github.com/Mindera/storyblok-swift-sdk'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Medweschek Michael' => 'michael@regiolix.at' }
-  s.source           = { :git => 'https://github.com/regiolix-solutions/storyblok-swift-sdk.git', :tag => '0.1.4' }
+  s.source           = { :git => 'https://github.com/Mindera/storyblok-swift-sdk.git', :tag => '0.1.5' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '13.0'
