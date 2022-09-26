@@ -47,27 +47,27 @@ public class StoryblokQuery: NSObject{
             dynamicDescription.append(contentsOf: "&starts_with=\(startsWith)")
         }
         
-        if let byUUIDs = byUUIDs {
+        if let byUUIDs = byUUIDs?.map({String($0.uuidString.lowercased())}).joined(separator: ",") {
             dynamicDescription.append(contentsOf: "&by_uuids=\(byUUIDs)")
         }
         
-        if let bySlugs = bySlugs {
+        if let bySlugs = bySlugs?.joined(separator: ",") {
             dynamicDescription.append(contentsOf: "&by_slugs=\(bySlugs)")
         }
         
-        if let excludingSlugs = excludingSlugs {
+        if let excludingSlugs = excludingSlugs?.joined(separator: ",") {
             dynamicDescription.append(contentsOf: "&excluding_slugs=\(excludingSlugs)")
         }
         
-        if let byUUIDsOrdered = byUUIDsOrdered {
+        if let byUUIDsOrdered = byUUIDsOrdered?.map({String($0.uuidString.lowercased())}).joined(separator: ",") {
             dynamicDescription.append(contentsOf: "&by_uuids_ordered=\(byUUIDsOrdered)")
         }
         
-        if let excludingIds = excludingIds {
+        if let excludingIds = excludingIds?.map({String($0)}).joined(separator: ",") {
             dynamicDescription.append(contentsOf: "&excluding_ids=\(excludingIds)")
         }
         
-        if let excludingFields = excludingFields {
+        if let excludingFields = excludingFields?.joined(separator: ",") {
             dynamicDescription.append(contentsOf: "&excluding_fields=\(excludingFields)")
         }
         
