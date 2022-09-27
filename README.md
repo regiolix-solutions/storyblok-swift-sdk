@@ -1,4 +1,4 @@
-# Storyblok Swift SDK - 0.1.5
+# Storyblok Swift SDK - 0.1.7
 
 [![Version](https://img.shields.io/cocoapods/v/RXSStoryblokClient.svg?style=flat)](https://cocoapods.org/pods/RXSStoryblokClient)
 [![License](https://img.shields.io/cocoapods/l/RXSStoryblokClient.svg?style=flat)](https://cocoapods.org/pods/RXSStoryblokClient)
@@ -7,6 +7,8 @@
 ## TL;DR
 This is a Swift SDK/Wrapper around the Storyblok Delivery API and the Storyblok Management API. As of now, only Story fetching, creation and deletion is supported. Additionally there is are Utility and Model classes for resolving RichText Objects from Storyblok (As of now there is only an Implementation for transforming the object to an HTML String)
 
+### Version 0.1.7
+* Queries with date related parameters weren't sending the date according to Storyblok API specs. Date queries are properly formatted now.
 ### Version 0.1.5
 * Fixed cocoapods source files path
 * Fixed Multi story parameters fix (when searching for slugs or uuids)
@@ -114,8 +116,8 @@ Whatever method you choose for creating and managing your `StoryblokClient`s, fo
 
 #### Fetching a single Story
 ```swift
-func fetchStory<T: StoryContent>(identifiedBy identifier: StoryIdentifier) async throws -> Story<T>?
-func fetchStory<T: StoryContent>(identifiedBy identifier: StoryIdentifier, applying query: StoryblokSingleStoryQuery) async throws -> Story<T>?
+func fetchStory<T: StoryContent>(identifiedBy identifier: StoryIdentifier) async throws -> SingleStory<T>?
+func fetchStory<T: StoryContent>(identifiedBy identifier: StoryIdentifier, applying query: StoryblokSingleStoryQuery) async throws -> SingleStory<T>?
 ```
 
 #### Fetching multiple Stories

@@ -79,19 +79,19 @@ public class StoryblokQuery: NSObject{
             dynamicDescription.append(contentsOf: "&search_term=\(searchTerm)")
         }
         
-        if let firstPublishedAtGt = firstPublishedAtGt {
+        if let firstPublishedAtGt = firstPublishedAtGt?.toISO8601Format() {
             dynamicDescription.append(contentsOf: "&first_published_at_gt=\(firstPublishedAtGt)")
         }
         
-        if let firstPublishedAtLt = firstPublishedAtLt {
+        if let firstPublishedAtLt = firstPublishedAtLt?.toISO8601Format() {
             dynamicDescription.append(contentsOf: "&first_published_at_lt=\(firstPublishedAtLt)")
         }
         
-        if let publishedAtGt = publishedAtGt {
+        if let publishedAtGt = publishedAtGt?.toISO8601Format() {
             dynamicDescription.append(contentsOf: "&published_at_gt=\(publishedAtGt)")
         }
         
-        if let publishedAtLt = publishedAtLt {
+        if let publishedAtLt = publishedAtLt?.toISO8601Format() {
             dynamicDescription.append(contentsOf: "&published_at_lt=\(publishedAtLt)")
         }
         
@@ -384,6 +384,15 @@ public class StoryblokMultiStoryQuery: StoryblokQuery{
     public func thatAreStartPages(_ startPage: Bool) -> Self{
         self.isStartPage = startPage
         return self
+    }
+}
+
+private extension Date {
+    func toISO8601Format() -> String {
+        let formatter = DateFormatter()
+        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        return formatter.string(from: self)
     }
 }
 
