@@ -1,4 +1,4 @@
-# Storyblok Swift SDK - 0.1.2
+# Storyblok Swift SDK - 0.1.5
 
 [![Version](https://img.shields.io/cocoapods/v/RXSStoryblokClient.svg?style=flat)](https://cocoapods.org/pods/RXSStoryblokClient)
 [![License](https://img.shields.io/cocoapods/l/RXSStoryblokClient.svg?style=flat)](https://cocoapods.org/pods/RXSStoryblokClient)
@@ -7,6 +7,9 @@
 ## TL;DR
 This is a Swift SDK/Wrapper around the Storyblok Delivery API and the Storyblok Management API. As of now, only Story fetching, creation and deletion is supported. Additionally there is are Utility and Model classes for resolving RichText Objects from Storyblok (As of now there is only an Implementation for transforming the object to an HTML String)
 
+### Version 0.1.5
+* Fixed cocoapods source files path
+* Fixed Multi story parameters fix (when searching for slugs or uuids)
 ### Version 0.1.2
 * Added a `SingleStory` struct so it processes correctly single stories.
 * Fixed the single story fetch methods so they fetch properly even when no custom `dataConnection` is configured.
