@@ -107,7 +107,7 @@ public class StoryblokQuery: NSObject{
             dynamicDescription.append(contentsOf: "&per_page=\(perPage)")
         }
         
-        if let version = version {
+        if let version = version?.rawValue {
             dynamicDescription.append(contentsOf: "&version=\(version)")
         }
         
