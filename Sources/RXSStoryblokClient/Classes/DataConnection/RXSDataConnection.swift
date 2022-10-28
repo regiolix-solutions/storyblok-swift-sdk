@@ -122,7 +122,7 @@ public class RXSDataConnection: DataConnection{
             }else{
                 continuation.resume(with: .success(nil))
             }
-        }
+        }.resume()
     }
 }
 
