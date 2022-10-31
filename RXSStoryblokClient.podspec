@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RXSStoryblokClient'
-  s.version          = '0.1.9'
+  s.version          = '0.1.10'
   s.summary          = 'A lightweight pure Swift SDK for the Storyblok Content Delivery and Management APIs'
 
 # This description is used to generate tags and improve search results.
