@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Medweschek Michael' => 'michael@regiolix.at' }
-  s.source           = { :git => 'https://github.com/Mindera/storyblok-swift-sdk.git', :tag => '0.1.9' }
+  s.source           = { :git => 'https://github.com/Mindera/storyblok-swift-sdk.git', :tag => '0.1.10' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '13.0'
