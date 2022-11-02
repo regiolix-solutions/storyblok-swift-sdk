@@ -1,4 +1,4 @@
-# Storyblok Swift SDK - 0.1.9
+# Storyblok Swift SDK - 0.1.10
 
 [![Version](https://img.shields.io/cocoapods/v/RXSStoryblokClient.svg?style=flat)](https://cocoapods.org/pods/RXSStoryblokClient)
 [![License](https://img.shields.io/cocoapods/l/RXSStoryblokClient.svg?style=flat)](https://cocoapods.org/pods/RXSStoryblokClient)
@@ -7,6 +7,8 @@
 ## TL;DR
 This is a Swift SDK/Wrapper around the Storyblok Delivery API and the Storyblok Management API. As of now, only Story fetching, creation and deletion is supported. Additionally there is are Utility and Model classes for resolving RichText Objects from Storyblok (As of now there is only an Implementation for transforming the object to an HTML String)
 
+### Version 0.1.10
+* Fixed `startDataTaskWithCheckedThrowingContinuation` method on `RXSDataConnection` class not calling `resume` method on session dataTask to trigger the request.
 ### Version 0.1.9
 * Fixed StoryVersion query which was passing the query as 'Draft'/'Published' instead of 'draft'/'published' as is required by the Storyblok API.
 ### Version 0.1.7
